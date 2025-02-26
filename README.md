@@ -45,27 +45,24 @@ docker run -e PERIOD="24h" -e HOTKEY="5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p
 
 ### Steps
 
-1. Create a virtual environment:
+Create a virtual environment:
 ```bash
 python -m venv venv
-```
-
-2. Activate the virtual environment:
-```bash
 source venv/bin/activate
 ```
 
-3. Install the required packages:
+Install the required packages:
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-4. Run the script:
+Run the script:
 ```bash
 python src/main.py
 ```
 
 You can set the same environment variables as in the Docker to customize the script's behavior, e.g.:
 ```bash
-PERIOD="24h" HOTKEY="5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp" NODE="wss://archive.chain.opentensor.ai:443" python src/main.py
+PERIOD="24h" HOTKEY="5DQ2Geab6G25wiZ4jGH6wJM8fekrm1QhV9hrRuntjBVxxKZm" NODE="wss://archive.chain.opentensor.ai:443" python src/main.py
 ```

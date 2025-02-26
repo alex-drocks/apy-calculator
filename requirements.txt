@@ -1,2 +1,2 @@
-bittensor == 8.4.5
-rich == 13.9.2
+git+https://github.com/opentensor/bittensor.git@v9.0.2#egg=bittensor
+rich==13.9.2
